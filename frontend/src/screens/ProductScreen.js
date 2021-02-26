@@ -5,7 +5,7 @@ import Rating from '../components/Rating';
 import products from '../products';
 
 const ProductScreen = ({ match }) => {
-   const product = products.find((p) => p._id === match.params.id);
+   const product = products.find((p) => p.id === match.params.id);
    return (
       <React.Fragment>
          <Link className='btn btn-light my-3' to='/'>
